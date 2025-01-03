@@ -99,4 +99,4 @@ def predict(train, test, predictors, model):
 predictions = backtest(sp500,model, new_predictors)
 predictions["Predictions"].value_counts()
 
-print(str(precision_score([predictions['Target']],predictions[predictions])))
+print(str(precision_score([predictions['Target']],predictions['Predictions'])))
